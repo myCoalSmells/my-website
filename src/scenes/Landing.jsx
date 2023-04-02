@@ -56,7 +56,7 @@ const Landing = ({setSelectedPage}) => {
                         </span>
                     </p>
                     <p className="mt-10 mb-7 text-sm text-center md:text-start">
-                        Hello! Nice to meet u!
+                        Hello! i study computer science and bioinformatics at UCLA. Nice to meet u!
                     </p>
                 </motion.div>
 
