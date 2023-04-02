@@ -57,9 +57,7 @@ return (
         </div>
         </div>
         <p className="mt-10 mb-10">
-        Aliquam, amet dui feugiat facilisi dui. Aliquam aliquet integer ut
-        fames odio in at. At magna ornare dictum lectus. Purus massa morbi
-        purus nec eget eleifend ut elit.
+            {/* can put text here */}
         </p>
     </motion.div>
 
@@ -79,24 +77,23 @@ return (
         >
             This website!
         </div>
-        <Project title="StudySync" text="hello"/>
-        <Project title="BattleShip" text="poopoo"/>
+        <Project title="StudySync" text="tinder but for finding your next study group!"/>
+        <Project title="BattleShip" text="console-based Battleship to play against friends or varying levels of AI"/>
         {/* <Project title="This Website" test="what youre looking at :)"/> */}
-
+        <Project title="AI Microscopy" text="using machine learning for non-invasive analysis of stem cell culture" />
           {/* ROW 2 */}
         {/* <Project title="Project 3" />
         <Project title="Project 4" />
         <Project title="Project 5" /> */}
 
           {/* ROW 3 */}
-        {/* <Project title="Project 6" />
-        <Project title="Project 7" />
+
         <div
             className="flex justify-center text-center items-center p-10 bg-blue
             max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold"
         >
-            SMOOTH USER EXPERIENCE
-        </div> */}
+            to be continued...
+        </div>
         </motion.div>
     </div>
     </section>
