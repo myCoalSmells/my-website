@@ -71,16 +71,17 @@ return (
         viewport={{ once: true, amount: 0.2 }}
         >
           {/* ROW 1 */}
-        <div
+        {/* <div
             className="flex justify-center text-center items-center p-10 bg-red
             max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold"
         >
             This website!
-        </div>
+        </div> */}
+        <Project title="AI Microscopy" text="using machine learning for non-invasive analysis of stem cell culture" />
         <Project title="StudySync" text="tinder but for finding your next study group!"/>
         <Project title="BattleShip" text="console-based Battleship to play against friends or varying levels of AI"/>
         {/* <Project title="This Website" test="what youre looking at :)"/> */}
-        {/* <Project title="AI Microscopy" text="using machine learning for non-invasive analysis of stem cell culture" /> */}
+
           {/* ROW 2 */}
         {/* <Project title="Project 3" />
         <Project title="Project 4" />
@@ -88,12 +89,12 @@ return (
 
           {/* ROW 3 */}
 
-        <div
+        {/* <div
             className="flex justify-center text-center items-center p-10 bg-blue
             max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold"
         >
             to be continued...
-        </div>
+        </div> */}
         </motion.div>
     </div>
     </section>
