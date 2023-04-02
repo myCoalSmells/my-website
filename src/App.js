@@ -3,6 +3,7 @@ import DotGroup from "./scenes/DotGroup";
 import Landing from "./scenes/Landing";
 import Projects from "./scenes/Projects";
 import LineGradient from "./components/LineGradient";
+import Contact from "./scenes/Contact";
 import MySkills from "./scenes/MySkills";
 import { useEffect, useState } from "react";
 import useMediaQuery from "./hooks/useMediaQuery";
@@ -34,13 +35,17 @@ function App() {
         )}
         <Landing setSelectedPage={setSelectedPage} />
       </div>
-      <LineGradient />
+      {/* <LineGradient /> */}
       <div className="w-5/6 mx-auto md:h-full">
         <MySkills />
       </div>
-      <LineGradient />
+      {/* <LineGradient /> */}
       <div className="w-5/6 mx-auto md:h-full">
         <Projects />
+      </div>
+      {/* <LineGradient /> */}
+      <div className="w-5/6 mx-auto md:h-full">
+          <Contact />
       </div>
     </div>
   );

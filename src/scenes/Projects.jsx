@@ -80,7 +80,7 @@ return (
         <Project title="StudySync" text="tinder but for finding your next study group!"/>
         <Project title="BattleShip" text="console-based Battleship to play against friends or varying levels of AI"/>
         {/* <Project title="This Website" test="what youre looking at :)"/> */}
-        <Project title="AI Microscopy" text="using machine learning for non-invasive analysis of stem cell culture" />
+        {/* <Project title="AI Microscopy" text="using machine learning for non-invasive analysis of stem cell culture" /> */}
           {/* ROW 2 */}
         {/* <Project title="Project 3" />
         <Project title="Project 4" />
