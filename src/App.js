@@ -1,6 +1,7 @@
 import Navbar from "./scenes/Navbar";
 import DotGroup from "./scenes/DotGroup";
 import Landing from "./scenes/Landing";
+import Projects from "./scenes/Projects";
 import LineGradient from "./components/LineGradient";
 import MySkills from "./scenes/MySkills";
 import { useEffect, useState } from "react";
@@ -36,6 +37,10 @@ function App() {
       <LineGradient />
       <div className="w-5/6 mx-auto md:h-full">
         <MySkills />
+      </div>
+      <LineGradient />
+      <div className="w-5/6 mx-auto md:h-full">
+        <Projects />
       </div>
     </div>
   );
