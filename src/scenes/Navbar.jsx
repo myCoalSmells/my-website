@@ -4,6 +4,7 @@ import useMediaQuery from "../hooks/useMediaQuery";
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 
+
 const Link = ({page, selectedPage, setSelectedPage}) =>{
     const lowerCasePage = page.toLowerCase();
     return (
@@ -22,7 +23,7 @@ const Link = ({page, selectedPage, setSelectedPage}) =>{
 const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
     const [isMenuToggled, setIsMenuToggled] = useState(false);
     const isAboveSmallScreens = useMediaQuery("(min-width: 768px)");
-    const navBarBackground = isTopOfPage ? "" : "bg-red";
+    const navBarBackground = isTopOfPage ? "" : "bg-pink";
 
     return(
         <nav className={`${navBarBackground} z-40 w-full fixed top-0 py-6`}>

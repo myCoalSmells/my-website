@@ -7,9 +7,10 @@ module.exports = {
       colors: {
         "deep-blue": "#010026",
         blue: "#2CBCE9",
-        red: "#DC4492",
+        red: "#E858DD",
         yellow: "#FDCC49",
         grey: "#ededed",
+        pink: "rgba(232, 88, 221, 0.5)",
         "dark-grey": "#757575",
         "opaque-black": "rgba(0,0,0,0.35)",
       },

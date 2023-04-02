@@ -2,6 +2,7 @@ import Navbar from "./scenes/Navbar";
 import DotGroup from "./scenes/DotGroup";
 import Landing from "./scenes/Landing";
 import Projects from "./scenes/Projects";
+import Footer from "./scenes/Footer";
 import LineGradient from "./components/LineGradient";
 import Contact from "./scenes/Contact";
 import MySkills from "./scenes/MySkills";
@@ -47,6 +48,7 @@ function App() {
       <div className="w-5/6 mx-auto md:h-full">
           <Contact />
       </div>
+      {/* <Footer /> */}
     </div>
   );
 }
