@@ -1,6 +1,7 @@
 import { useState } from "react";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import useMediaQuery from "../hooks/useMediaQuery";
+import MenuIcon from '@mui/icons-material/Menu';
 
 const Link = ({page, selectedPage, setSelectedPage}) =>{
     const lowerCasePage = page.toLowerCase();
@@ -33,8 +34,30 @@ const Navbar = ({ selectedPage, setSelectedPage }) => {
                             selectedPage={selectedPage}
                             setSelectedPage={setSelectedPage}
                         />
+                        <Link 
+                            page="Skills"
+                            selectedPage={selectedPage}
+                            setSelectedPage={setSelectedPage}
+                        />
+                        <Link 
+                            page="Projects"
+                            selectedPage={selectedPage}
+                            setSelectedPage={setSelectedPage}
+                        />
+                        <Link 
+                            page="Contact"
+                            selectedPage={selectedPage}
+                            setSelectedPage={setSelectedPage}
+                        />
                     </div>
-                ) : (<div></div>)}
+                ) : (
+                    <button
+                        className="rounded-full bg-red p-2"
+                        onClick={() => setIsMenuToggled(!isMenuToggled)}
+                    >
+                        <MenuIcon />
+                    </button>
+                    )}
             </div>
         </nav>
     )
