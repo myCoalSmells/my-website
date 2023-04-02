@@ -30,9 +30,34 @@ const Landing = ({setSelectedPage}) => {
                             src={pfp}
                         />
                 )}
+            </div>
 
-                {/* MAIN SECTION */}
-                
+            {/* MAIN SECTION */}
+            <div className="z-30 basis2/5 mt-12 md:mt-32">
+                {/* headings */}
+                <motion.div
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true, amount: 0.5}}
+                    transition={{ duration: 0.7}}
+                    variants={{
+                        hidden: { opacity: 0, x: -50 },
+                        visible: { opacity: 1, x: 0}
+                    }}
+                >
+                    <p className="text-6xl font-playfair z-10 text-center md:text-start">
+                        Michael {""}
+                        <span 
+                            className="xs:relative xs:text-deep-blue xs:font-semibold z-20 xs:before:content-brush
+                            before:absolute before:-left-[20px] before:-top-[10px] before:z-[-1]"
+                        >
+                            Liu
+                        </span>
+                    </p>
+                    <p className="mt-10 mb-7 text-sm text-center md:text-start">
+                        Hello! Nice to meet u!
+                    </p>
+                </motion.div>
             </div>
         </section>
     )

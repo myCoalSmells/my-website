@@ -564,6 +564,10 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.visible{
+  visibility: visible;
+}
+
 .fixed{
   position: fixed;
 }
@@ -604,6 +608,14 @@ video {
   z-index: 10;
 }
 
+.z-20{
+  z-index: 20;
+}
+
+.z-30{
+  z-index: 30;
+}
+
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
@@ -621,8 +633,24 @@ video {
   margin-top: 4rem;
 }
 
+.mt-12{
+  margin-top: 3rem;
+}
+
+.mb-7{
+  margin-bottom: 1.75rem;
+}
+
+.mt-10{
+  margin-top: 2.5rem;
+}
+
 .flex{
   display: flex;
+}
+
+.hidden{
+  display: none;
 }
 
 .h-full{
@@ -745,6 +773,10 @@ video {
   padding-bottom: 2.5rem;
 }
 
+.text-center{
+  text-align: center;
+}
+
 .font-opensans{
   font-family: Open Sans, sans-serif;
 }
@@ -766,6 +798,11 @@ video {
 .text-2xl{
   font-size: 1.5rem;
   line-height: 2rem;
+}
+
+.text-6xl{
+  font-size: 3.75rem;
+  line-height: 1;
 }
 
 .font-bold{
@@ -831,6 +868,41 @@ body,
 .before\:-top-20::before{
   content: var(--tw-content);
   top: -5rem;
+}
+
+.before\:-left-\[25px\]::before{
+  content: var(--tw-content);
+  left: -25px;
+}
+
+.before\:-top-\[70px\]::before{
+  content: var(--tw-content);
+  top: -70px;
+}
+
+.before\:-top-\[30px\]::before{
+  content: var(--tw-content);
+  top: -30px;
+}
+
+.before\:-top-\[10px\]::before{
+  content: var(--tw-content);
+  top: -10px;
+}
+
+.before\:-left-\[15px\]::before{
+  content: var(--tw-content);
+  left: -15px;
+}
+
+.before\:-left-\[17px\]::before{
+  content: var(--tw-content);
+  left: -17px;
+}
+
+.before\:-left-\[20px\]::before{
+  content: var(--tw-content);
+  left: -20px;
 }
 
 .before\:z-\[-1\]::before{
@@ -907,6 +979,26 @@ body,
           filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
+@media (min-width: 480px){
+  .xs\:relative{
+    position: relative;
+  }
+
+  .xs\:font-semibold{
+    font-weight: 600;
+  }
+
+  .xs\:text-deep-blue{
+    --tw-text-opacity: 1;
+    color: rgb(1 0 38 / var(--tw-text-opacity));
+  }
+
+  .xs\:before\:content-brush::before{
+    --tw-content: url('./assets/brush.png');
+    content: var(--tw-content);
+  }
+}
+
 @media (min-width: 1060px){
   .md\:order-2{
     order: 2;
@@ -934,6 +1026,10 @@ body,
 
   .md\:justify-between{
     justify-content: space-between;
+  }
+
+  .md\:text-start{
+    text-align: start;
   }
 
   .md\:before\:max-w-\[600px\]::before{
