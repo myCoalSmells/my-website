@@ -26,7 +26,7 @@ const MySkills = () => {
           </p>
           <LineGradient width="w-2/3" />
           <p className="mt-10 mb-7">
-            i bring some things to the table!
+            beyond what's on my resume, here's what i bring to the table
           </p>
         </motion.div>
 
@@ -72,7 +72,7 @@ const MySkills = () => {
             <div className="w-1/2 md:w-3/4 h-24 bg-blue absolute right-0 top-0 z-[-1]" />
           </div>
           <p className="mt-5">
-            i've developed, solved problems, and learned from many many mistakes
+            navigating diverse projects has honed my problem-solving skills and taught me the value of learning from my many many mistakes along the way
           </p>
         </motion.div>
 
@@ -98,7 +98,7 @@ const MySkills = () => {
             <div className="w-1/2 md:w-3/4 h-24 bg-red absolute right-0 top-0 z-[-1]" />
           </div>
           <p className="mt-5">
-            from machine learning algorithms on stem cells to just tinkering with my mechanical keyboard i let curiosity guide my passion
+            from machine learning applications in stem cell research to making unnecessary modifications my PC setup, i let my curiosity drive my passions
           </p>
         </motion.div>
         {/* LEADERSHIP */}
@@ -123,7 +123,7 @@ const MySkills = () => {
             <div className="w-1/2 md:w-3/4 h-24 bg-yellow absolute right-0 top-0 z-[-1]" />
           </div>
           <p className="mt-5">
-            as an eagle scout, i know when to embrace leadership, and extract the best out of everyone
+            i know when to embrace leadership, how to extract the best out of my teammates, and find the fun in all situations
           </p>
         </motion.div>
       </div>
