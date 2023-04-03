@@ -15,23 +15,33 @@ hidden: { opacity: 0, scale: 0.8 },
 visible: { opacity: 1, scale: 1 },
 };
 
-const Project = ({ title , text}) => {
+const Project = ({ title, text, url }) => {
     const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500
         bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue`;
     const projectTitle = title.split(" ").join("-").toLowerCase();
-
-return (
-    <motion.div variants={projectVariant} className="relative">
-    <div className={overlayStyles}>
-        <p className="text-2xl font-playfair">{title}</p>
-        <p className="mt-7">
-        {text}
-        </p>
-    </div>
-    <img src={require(`../assets/${projectTitle}.jpeg`)} alt={projectTitle} />
-    </motion.div>
-);
-};
+  
+    const handleClick = () => {
+      window.open(url, "_blank");
+    };
+  
+    return (
+      <motion.div
+        variants={projectVariant}
+        className="relative cursor-pointer"
+        onClick={handleClick}
+      >
+        <div className={overlayStyles}>
+          <p className="text-2xl font-playfair">{title}</p>
+          <p className="mt-7">{text}</p>
+        </div>
+        <img
+          src={require(`../assets/${projectTitle}.jpeg`)}
+          alt={projectTitle}
+        />
+      </motion.div>
+    );
+  };
+  
 
 const Projects = () => {
 return (
@@ -77,9 +87,9 @@ return (
         >
             This website!
         </div> */}
-        <Project title="AI Microscopy" text="using machine learning for non-invasive analysis of stem cell culture" />
-        <Project title="StudySync" text="tinder but for finding your next study group!"/>
-        <Project title="BattleShip" text="console-based Battleship to play against friends or varying levels of AI"/>
+        <Project title="AI Microscopy" text="using machine learning for non-invasive analysis of stem cell culture" url="https://docs.google.com/presentation/d/1uUoGNGn3yKFTxocOiPrJcQP7AP1_eIjL/edit?usp=sharing&ouid=118285947792588074434&rtpof=true&sd=true"/>
+        <Project title="StudySync" text="tinder but for finding your next study group!" url="https://github.com/myCoalSmells/study_sync"/>
+        <Project title="BattleShip" text="console-based Battleship to play against friends or varying levels of AI" url="https://github.com/myCoalSmells/Battleship"/>
         {/* <Project title="This Website" test="what youre looking at :)"/> */}
 
           {/* ROW 2 */}
