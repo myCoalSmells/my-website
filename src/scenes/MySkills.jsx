@@ -72,7 +72,7 @@ const MySkills = () => {
             <div className="w-1/2 md:w-3/4 h-24 bg-blue absolute right-0 top-0 z-[-1]" />
           </div>
           <p className="mt-5">
-            navigating diverse projects has honed my problem-solving skills and taught me the value of learning from my many many mistakes along the way
+            navigating diverse projects has honed my problem-solving skills and taught me the value of learning from my many, many mistakes along the way
           </p>
         </motion.div>
 
@@ -123,7 +123,7 @@ const MySkills = () => {
             <div className="w-1/2 md:w-3/4 h-24 bg-yellow absolute right-0 top-0 z-[-1]" />
           </div>
           <p className="mt-5">
-            i know when to embrace leadership, how to extract the best out of my teammates, and find the fun in all situations
+            i know when to embrace leadership, how to synthesize the best qualities of my teammates, and find the fun in all situations
           </p>
         </motion.div>
       </div>
