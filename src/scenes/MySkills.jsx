@@ -25,7 +25,7 @@ const MySkills = () => {
             MY <span className="text-red">SKILLS</span>
           </p>
           <LineGradient width="w-2/3" />
-          <p className="mt-10 mb-7">
+          <p className="mt-10 mb-7 text-md">
             beyond what's on my resume, here's what i bring to the table
           </p>
         </motion.div>

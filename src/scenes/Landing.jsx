@@ -55,7 +55,7 @@ const Landing = ({setSelectedPage}) => {
                             Liu
                         </span>
                     </p>
-                    <p className="mt-10 mb-7 text-sm text-center md:text-start">
+                    <p className="mt-10 mb-7 text-md text-center md:text-start">
                         Hello! i study computer science and bioinformatics at UCLA. Nice to meet u!
                     </p>
                 </motion.div>
@@ -77,18 +77,18 @@ const Landing = ({setSelectedPage}) => {
                         onClick={() => setSelectedPage("Contact")}
                         href="#contact"
                     >
-                        Contact me!
+                        Let's Chat!
                     </AnchorLink>
 
                     <AnchorLink
                         className="rounded-r-sm bg-gradient-rainblue py-0.5 pr-0.5"
-                        onClick={() => setSelectedPage("Contact")}
-                        href="#contact"
+                        onClick={() => setSelectedPage("Projects")}
+                        href="#projects"
                     >
                         <div
-                            className="bg-deep-blue hover:text-red transition duration-500 w-full h-full flex items-center justify-center px-10 px-10"
+                            className="bg-deep-blue hover:text-red transition duration-500 w-full h-full flex items-center justify-center px-10 px-10 "
                         >
-                            Let's chat!
+                            Projects
                         </div>
                     </AnchorLink>
                 </motion.div>
