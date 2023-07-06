@@ -23,7 +23,7 @@ const Link = ({page, selectedPage, setSelectedPage}) =>{
 const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
     const [isMenuToggled, setIsMenuToggled] = useState(false);
     const isAboveSmallScreens = useMediaQuery("(min-width: 768px)");
-    const navBarBackground = isTopOfPage ? "" : "bg-pink";
+    const navBarBackground = isTopOfPage ? "" : "";
 
     return(
         <nav className={`${navBarBackground} z-40 w-full fixed top-0 py-6`}>
@@ -55,7 +55,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
                     </div>
                 ) : (
                     <button
-                        className="rounded-full bg-red p-2"
+                        className="rounded-full p-2"
                         onClick={() => setIsMenuToggled(!isMenuToggled)}
                     >
                         <MenuIcon />
