@@ -25,7 +25,7 @@ const SocialMediaIcons = () => {
 
             <a
                 className="hover:opactiy-50 transition duration-500"
-                href="https://drive.google.com/file/d/1SXY53_gWW4bie9owqOQ3qi0k1B_wJxg8/view?usp=sharing"
+                href="https://drive.google.com/file/d/1i3We8MAT9ae4J80oTebxdLnu4Sogbpv5/view?usp=sharing"
                 target="_blank"
                 rel="noreferrer"
             >
