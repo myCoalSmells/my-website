@@ -11,6 +11,7 @@ import useMediaQuery from "./hooks/useMediaQuery";
 import Blogs from "./scenes/Blogs";
 import { Routes, Route } from "react-router-dom";
 import { getActiveSection } from "./utils/activeSection";
+import BlogPost from "./scenes/BlogPost";
 
 function App() {
   const [selectedPage, setSelectedPage] = useState("home");
@@ -34,16 +35,17 @@ function App() {
 
   return (
     <div className="app bg-deep-blue">
-      <Navbar
-        isTopOfPage={isTopOfPage}
-        selectedPage={selectedPage}
-        setSelectedPage={setSelectedPage}
-      />
       <Routes>
+        <Route path="/blog/:id" element={<BlogPost />} />
         <Route
           path="/"
           element={
             <>
+              <Navbar
+                isTopOfPage={isTopOfPage}
+                selectedPage={selectedPage}
+                setSelectedPage={setSelectedPage}
+              />
               <div className="w-5/6 mx-auto md:h-full">
                 {isAboveMediumScreens && (
                   <DotGroup
