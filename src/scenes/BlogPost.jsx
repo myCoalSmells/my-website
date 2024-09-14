@@ -6,13 +6,14 @@ import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 const blogPosts = [
   {
     id: 1,
-    title: "Life & Evolution's Opinion on Entropy",
+    title: "Entropy must really hate evolution",
     content:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris...",
   },
   {
     id: 2,
-    title: "Everything we create has been made by nature",
+    title:
+      "Everything we create has been made by nature and how computer science is similar but also different",
     content:
       "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium...",
   },

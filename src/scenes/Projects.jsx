@@ -27,14 +27,20 @@ const Project = ({ title, text, url }) => {
   return (
     <motion.div
       variants={projectVariant}
-      className="relative cursor-pointer"
+      className="relative cursor-pointer w-full aspect-square"
       onClick={handleClick}
     >
       <div className={overlayStyles}>
         <p className="text-2xl font-playfair">{title}</p>
         <p className="mt-7">{text}</p>
       </div>
-      <img src={require(`../assets/${projectTitle}.jpeg`)} alt={projectTitle} />
+      <div className="w-full h-full overflow-hidden">
+        <img
+          src={require(`../assets/${projectTitle}.jpeg`)}
+          alt={projectTitle}
+          className="w-full h-full object-cover"
+        />
+      </div>
     </motion.div>
   );
 };
@@ -68,19 +74,17 @@ const Projects = () => {
       {/* PROJECTS */}
       <div className="flex justify-center">
         <motion.div
-          className="sm:grid sm:grid-cols-3"
+          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 max-w-[1200px] mx-auto"
           variants={container}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
         >
-          {/* ROW 1 */}
-          {/* <div
-            className="flex justify-center text-center items-center p-10 bg-red
-            max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold"
-        >
-            This website!
-        </div> */}
+          <Project
+            title="CleanASF"
+            text="strava but for picking up trashing in SF. Winner @ SFHacks 2024"
+            url="https://devpost.com/software/cleanasf"
+          />
           <Project
             title="AI Microscopy"
             text="using machine learning for non-invasive analysis of stem cell culture"
@@ -96,21 +100,7 @@ const Projects = () => {
             text="console-based Battleship to play against friends or varying levels of AI"
             url="https://github.com/myCoalSmells/Battleship"
           />
-          {/* <Project title="This Website" test="what youre looking at :)"/> */}
-
-          {/* ROW 2 */}
-          {/* <Project title="Project 3" />
-        <Project title="Project 4" />
-        <Project title="Project 5" /> */}
-
-          {/* ROW 3 */}
-
-          {/* <div
-            className="flex justify-center text-center items-center p-10 bg-blue
-            max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold"
-        >
-            to be continued...
-        </div> */}
+          {/* Add more Project components as needed */}
         </motion.div>
       </div>
     </section>
