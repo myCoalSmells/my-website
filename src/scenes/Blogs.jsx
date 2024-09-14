@@ -6,14 +6,15 @@ const Blogs = () => {
   const blogPosts = [
     {
       id: 1,
-      title: "Life & Evolution's Opinion on Entropy",
-      excerpt: "Exploring the intersection of biology and physics...",
+      title: "Entropy must really hate evolution",
+      excerpt:
+        "Life has a weird relationship with how the world wants to work...",
     },
     {
       id: 2,
-      title: "Everything we create has been made by nature",
-      excerpt:
-        "Examining the relationship between human innovation and natural processes...",
+      title:
+        "Everything we create has been made by nature and how computer science is similar but also different",
+      excerpt: "Examining human innovation vs. natural processes...",
     },
   ];
 

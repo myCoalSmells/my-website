@@ -10,6 +10,7 @@ import { useEffect, useState } from "react";
 import useMediaQuery from "./hooks/useMediaQuery";
 import Blogs from "./scenes/Blogs";
 import { Routes, Route } from "react-router-dom";
+import { getActiveSection } from "./utils/activeSection";
 
 function App() {
   const [selectedPage, setSelectedPage] = useState("home");
@@ -18,8 +19,14 @@ function App() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY === 0) setIsTopOfPage(true);
-      if (window.scrollY !== 0) setIsTopOfPage(false);
+      if (window.scrollY === 0) {
+        setIsTopOfPage(true);
+        setSelectedPage("home");
+      } else {
+        setIsTopOfPage(false);
+        const activeSection = getActiveSection();
+        setSelectedPage(activeSection);
+      }
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
@@ -50,7 +57,10 @@ function App() {
               <div className="w-5/6 mx-auto md:h-full">
                 <MySkills />
               </div>
-              <LineGradient />
+
+              <div className="py-10">
+                <LineGradient />
+              </div>
               <div className="w-5/6 mx-auto md:h-full">
                 <Projects />
               </div>
@@ -66,7 +76,6 @@ function App() {
           }
         />
       </Routes>
-      <Footer />
     </div>
   );
 }
