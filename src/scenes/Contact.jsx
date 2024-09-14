@@ -53,7 +53,11 @@ const Contact = () => {
           }}
           className="basis-1/2 flex justify-center"
         >
-          <img className="rounded-lg" src={require(`../assets/contact.jpeg`)} alt="contact" />
+          <img
+            className="rounded-lg hover:filter hover:saturate-200 transition duration-500"
+            src={require(`../assets/contact.jpeg`)}
+            alt="contact"
+          />
         </motion.div>
 
         <motion.div

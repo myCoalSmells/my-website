@@ -1,15 +1,14 @@
 import LineGradient from "../components/LineGradient";
 import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
-import skillz from '../assets/skillz.JPG';
-
+import skillz from "../assets/skillz.JPG";
 
 const MySkills = () => {
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
   return (
     <section id="skills" className="pt-10 pb-24">
       {/* HEADER AND IMAGE SECTION */}
-        <div className="md:flex md:justify-between md:gap-16 mt-32">
+      <div className="md:flex md:justify-between md:gap-16 mt-32">
         <motion.div
           className="md:w-1/3"
           initial="hidden"
@@ -38,12 +37,16 @@ const MySkills = () => {
             >
               <img
                 alt="skills"
-                className="z-10"
+                className="z-10 hover:filter hover:saturate-200 transition duration-500"
                 src={skillz}
               />
             </div>
           ) : (
-            <img alt="skills" className="z-10" src={skillz} />
+            <img
+              alt="skills"
+              className="z-10 hover:filter hover:saturate-200 transition duration-500"
+              src={skillz}
+            />
           )}
         </div>
       </div>
@@ -72,7 +75,9 @@ const MySkills = () => {
             <div className="w-1/2 md:w-3/4 h-24 bg-blue absolute right-0 top-0 z-[-1]" />
           </div>
           <p className="mt-5">
-            navigating diverse projects has honed my problem-solving skills and taught me the value of learning from my many, many mistakes along the way
+            navigating diverse projects has honed my problem-solving skills and
+            taught me the value of learning from my many, many mistakes along
+            the way
           </p>
         </motion.div>
 
@@ -98,7 +103,9 @@ const MySkills = () => {
             <div className="w-1/2 md:w-3/4 h-24 bg-red absolute right-0 top-0 z-[-1]" />
           </div>
           <p className="mt-5">
-            from machine learning applications in stem cell research to making unnecessary modifications to my PC setup, i let my curiosity drive my passions
+            from machine learning applications in stem cell research to making
+            unnecessary modifications to my PC setup, i let my curiosity drive
+            my passions
           </p>
         </motion.div>
         {/* LEADERSHIP */}
@@ -123,7 +130,8 @@ const MySkills = () => {
             <div className="w-1/2 md:w-3/4 h-24 bg-yellow absolute right-0 top-0 z-[-1]" />
           </div>
           <p className="mt-5">
-            i know when to embrace leadership, how to synthesize the best qualities of my teammates, and find the fun in all situations
+            i know when to embrace leadership, how to synthesize the best
+            qualities of my teammates, and find the fun in all situations
           </p>
         </motion.div>
       </div>
