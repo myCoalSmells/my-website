@@ -8,47 +8,65 @@ import Contact from "./scenes/Contact";
 import MySkills from "./scenes/MySkills";
 import { useEffect, useState } from "react";
 import useMediaQuery from "./hooks/useMediaQuery";
-
+import Blogs from "./scenes/Blogs";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
-  const [selectedPage, setSelectedPage] = useState('home');
+  const [selectedPage, setSelectedPage] = useState("home");
   const [isTopOfPage, setIsTopOfPage] = useState(true);
-  const isAboveMediumScreens = useMediaQuery("(min-width: 1060px");
+  const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
 
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY === 0) setIsTopOfPage(true);
       if (window.scrollY !== 0) setIsTopOfPage(false);
-    }
+    };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [])
+  }, []);
 
   return (
     <div className="app bg-deep-blue">
-      <Navbar isTopOfPage={isTopOfPage} selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
-      <div className="w-5/6 mx-auto md:h-full">
-        {isAboveMediumScreens && (
-          <DotGroup 
-            selectedPage={selectedPage}
-            setSelectedPage={setSelectedPage}
-          />
-        )}
-        <Landing setSelectedPage={setSelectedPage} />
-      </div>
-      <LineGradient />
-      <div className="w-5/6 mx-auto md:h-full">
-        <MySkills />
-      </div>
-      <LineGradient />
-      <div className="w-5/6 mx-auto md:h-full">
-        <Projects />
-      </div>
-      <LineGradient />
-      <div className="w-5/6 mx-auto md:h-full">
-          <Contact />
-      </div>
-      {/* <Footer /> */}
+      <Navbar
+        isTopOfPage={isTopOfPage}
+        selectedPage={selectedPage}
+        setSelectedPage={setSelectedPage}
+      />
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <div className="w-5/6 mx-auto md:h-full">
+                {isAboveMediumScreens && (
+                  <DotGroup
+                    selectedPage={selectedPage}
+                    setSelectedPage={setSelectedPage}
+                  />
+                )}
+                <Landing setSelectedPage={setSelectedPage} />
+              </div>
+              <LineGradient />
+              <div className="w-5/6 mx-auto md:h-full">
+                <MySkills />
+              </div>
+              <LineGradient />
+              <div className="w-5/6 mx-auto md:h-full">
+                <Projects />
+              </div>
+              <LineGradient />
+              <div className="w-5/6 mx-auto md:h-full">
+                <Blogs />
+              </div>
+              <LineGradient />
+              <div className="w-5/6 mx-auto md:h-full">
+                <Contact />
+              </div>
+            </>
+          }
+        />
+      </Routes>
+      <Footer />
     </div>
   );
 }
